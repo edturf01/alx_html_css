@@ -16,9 +16,22 @@ main {
 article {
   flex: 2;
   overflow-y: auto;
+  background: #202020;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  color: #e0e0e0;
+  line-height: 1.6;
 }
 
 aside {
   flex: 1;
   overflow-y: auto;
+}
+
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #ffcc00; /* bright star yellow */
+  margin-right: 1rem;
 }
