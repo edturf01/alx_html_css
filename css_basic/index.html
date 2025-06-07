@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>My First Portfolio - Home</title>
+  <link href="base.css" rel="stylesheet">
+  <link href="styles.css" rel="stylesheet">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0; padding: 0;
+      background: #121212;
+      color: #f0f0f0;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header, footer {
+      background: #1f1f1f;
+      padding: 1rem;
+    }
+    header ul {
+      list-style: none;
+      display: flex;
+      gap: 2rem;
+      margin: 0; padding: 0;
+    }
+    header ul li a {
+      color: #61dafb;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    header ul li a:hover {
+      text-decoration: underline;
+    }
+    main {
+      flex: 1;
+      display: flex;
+      padding: 2rem;
+      gap: 2rem;
+      background: #181818;
+    }
+    article {
+      flex: 3;
+    }
+    aside {
+      flex: 1;
+      background: #282828;
+      padding: 1rem;
+      border-radius: 8px;
+      font-style: italic;
+      color: #aaa;
+    }
+    footer p {
+      margin: 0;
+      font-size: 0.9rem;
+      text-align: center;
+      color: #666;
+    }
+    footer p a {
+      color: #61dafb;
+      text-decoration: none;
+    }
+    footer p a:hover {
+      text-decoration: underline;
+    }
+    img {
+      max-width: 100%;
+      border-radius: 8px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="tweets.html">Tweets</a></li>
+    </ul>
+  </header>
+  <main>
+    <article>
+      <h1>Welcome to My First Portfolio</h1>
+      <p>This is the homepage where I showcase some of my projects and interests.</p>
+      <img src="https://placekitten.com/600/300" alt="Cool kitten" />
+      <p>Want to see my tweets? <a href="tweets.html">Check them out here!</a></p>
+    </article>
+    <aside>
+      <p>placeholder to add comment thread later</p>
+    </aside>
+  </main>
+  <footer>
+    <p>Made by Edward Nana Dwemoh - <a href="https://github.com/edturf01" target="_blank">here</a>.</p>
+  </footer>
+</body>
+</html>
