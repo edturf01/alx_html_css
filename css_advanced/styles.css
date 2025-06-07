@@ -1,0 +1,116 @@
+/* styles.css - Main stylesheet for SmileSchool */
+
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #ffffff;
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header styles */
+header {
+  background-color: #f5f5f5;
+  padding: 20px 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+nav img {
+  height: 50px;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+/* Main banner */
+main section:first-of-type {
+  background-color: #ffd700;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+main section:first-of-type h1 {
+  font-size: 48px;
+  margin-bottom: 10px;
+}
+
+main section:first-of-type span {
+  display: inline-block;
+  margin: 5px 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+main section:first-of-type button {
+  margin-top: 20px;
+  padding: 10px 25px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Footer styles */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 40px 20px;
+}
+
+footer img {
+  height: 40px;
+}
+
+footer i {
+  margin: 0 10px;
+  font-size: 20px;
+  color: #fff;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+  }
+
+  nav ul {
+    flex-direction: column;
+    margin-top: 10px;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+
+  main section:first-of-type h1 {
+    font-size: 32px;
+  }
+}
