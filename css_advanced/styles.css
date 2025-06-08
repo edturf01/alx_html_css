@@ -378,3 +378,37 @@ nav a {
   line-height: 1.6;
   color: #333;
 }
+.footer {
+  background-color: #071629;
+  padding: 40px 20px;
+  color: white;
+  text-align: center;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: auto;
+  padding-bottom: 20px;
+}
+
+.footer-left img {
+  height: 30px;
+}
+
+.footer-right a {
+  margin: 0 10px;
+}
+
+.footer-right img {
+  height: 20px;
+  width: 20px;
+}
+
+.footer-copy {
+  font-size: 12px;
+  color: #ccc;
+}
