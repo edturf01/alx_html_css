@@ -2,13 +2,13 @@
 body {
   margin: 0;
   font-family: 'Source Sans Pro', sans-serif;
-  background-color: #000;
-  color: white;
+  background-color: #fff; /* Changed from black to white */
+  color: #000; /* Changed from white to black */
 }
 
 a {
   text-decoration: none;
-  color: white;
+  color: #000; /* Changed from white */
 }
 
 ul {
@@ -21,6 +21,11 @@ ul {
 header {
   background-color: transparent;
   padding: 20px 60px;
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 10;
 }
 
 nav {
@@ -31,6 +36,7 @@ nav {
 
 nav img {
   height: 50px;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.5));
 }
 
 nav ul {
@@ -38,9 +44,14 @@ nav ul {
   gap: 30px;
 }
 
-nav li {
+nav li,
+nav a {
   font-weight: 400;
+  color: white;
+  text-decoration: none;
 }
+
+
 
 /* Banner Section */
 .banner {
@@ -174,6 +185,7 @@ nav li {
     max-width: 500px;
   }
 }
+
 /* Videos Section */
 .videos {
   text-align: center;
@@ -268,3 +280,67 @@ nav li {
   margin-left: auto;
 }
 
+/* Membership Section */
+.membership {
+  background-color: #071629;
+  text-align: center;
+  padding: 80px 20px;
+  color: white;
+}
+
+.membership h2 {
+  font-size: 2.5rem;
+  margin-bottom: 50px;
+}
+
+.membership .highlight {
+  color: #C271FF;
+  font-weight: bold;
+}
+
+.membership-benefits {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+.benefit {
+  max-width: 200px;
+}
+
+.benefit img {
+  height: 50px;
+  margin-bottom: 20px;
+}
+
+.benefit h3 {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.benefit p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+/* Purple CTA button variant */
+.cta-button.purple {
+  background-color: #C271FF;
+  padding: 12px 30px;
+  font-size: 14px;
+  border: none;
+  border-radius: 30px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: background-color 0.3s ease;
+}
+
+.cta-button.purple:hover {
+  background-color: #a24dcf;
+}
