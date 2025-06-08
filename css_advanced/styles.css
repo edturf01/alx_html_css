@@ -344,3 +344,37 @@ nav a {
 .cta-button.purple:hover {
   background-color: #a24dcf;
 }
+/* FAQ Section */
+.faq {
+  background-color: white;
+  color: black;
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.faq h2 {
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.faq-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 60px;
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+.faq-item h3 {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.faq-item p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  color: #333;
+}
