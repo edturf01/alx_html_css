@@ -1,32 +1,32 @@
-/* styles.css - Main stylesheet for SmileSchool */
-
-/* Reset some default styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
+/* Reset and Base Styles */
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #ffffff;
-  color: #333;
-  line-height: 1.6;
+  margin: 0;
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #000;
+  color: white;
 }
 
-/* Header styles */
+a {
+  text-decoration: none;
+  color: white;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Header */
 header {
-  background-color: #f5f5f5;
-  padding: 20px 0;
+  background-color: transparent;
+  padding: 20px 60px;
 }
 
 nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 90%;
-  max-width: 1200px;
-  margin: 0 auto;
 }
 
 nav img {
@@ -35,82 +35,142 @@ nav img {
 
 nav ul {
   display: flex;
-  list-style: none;
+  gap: 30px;
 }
 
-nav ul li {
-  margin-left: 20px;
+nav li {
+  font-weight: 400;
 }
 
-nav ul li a {
-  text-decoration: none;
-  color: #333;
+/* Banner Section */
+.banner {
+  background-color: #C271FF;
+  text-align: center;
+  padding: 100px 20px;
+  color: white;
+}
+
+.banner-content {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.banner h1 {
+  font-size: 80px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  gap: 20px;
   font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
 }
 
-/* Main banner */
-main section:first-of-type {
-  background-color: #ffd700;
-  padding: 60px 20px;
+.cta-button {
+  background-color: #C271FF;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+  transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+  background-color: #a24dcf;
+}
+
+/* Pros Section (if used) */
+.banner h2 {
+  margin-top: 60px;
+  font-size: 2rem;
+}
+
+.banner > div > div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 30px;
+}
+
+.banner > div > div > div {
   text-align: center;
 }
 
-main section:first-of-type h1 {
-  font-size: 48px;
+.banner img {
+  border-radius: 50%;
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+}
+
+/* Quote Section */
+.quote {
+  background-color: #C271FF;
+  padding: 60px 20px;
+  text-align: center;
+  color: white;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.quote-avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.quote-text {
+  max-width: 600px;
+  text-align: center;
+}
+
+.quote-text blockquote {
+  font-style: italic;
+  font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-main section:first-of-type span {
-  display: inline-block;
-  margin: 5px 10px;
-  font-size: 20px;
-  font-weight: 500;
+.quote-text h3 {
+  font-weight: bold;
+  font-size: 1.1rem;
+  margin: 0;
 }
 
-main section:first-of-type button {
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #000;
-  color: #fff;
-  border: none;
-  font-size: 16px;
-  cursor: pointer;
+.quote-text p {
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0;
 }
 
-/* Footer styles */
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 40px 20px;
-}
-
-footer img {
-  height: 40px;
-}
-
-footer i {
-  margin: 0 10px;
-  font-size: 20px;
-  color: #fff;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  nav {
-    flex-direction: column;
+/* Responsive Quote Layout */
+@media screen and (min-width: 600px) {
+  .quote-container {
+    flex-direction: row;
+    text-align: left;
   }
 
-  nav ul {
-    flex-direction: column;
-    margin-top: 10px;
-  }
-
-  nav ul li {
-    margin: 10px 0;
-  }
-
-  main section:first-of-type h1 {
-    font-size: 32px;
+  .quote-text {
+    max-width: 500px;
   }
 }
